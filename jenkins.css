@@ -1,0 +1,48 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://pav.hanyang.ac.kr/jenkins/") {
+
+* {
+  color: #444;
+}
+
+body {
+  padding: 10px 20px !important;
+}
+
+a { text-decoration: none !important; color: #444 !important; }
+
+#top-panel { background: none !important; border-bottom: #bbb 1px solid; }
+#top-panel img { height: 0; }
+#top-panel img:after { content: "Jenkins"; }
+#search-box { border-radius: 5px; border: 1px solid #ccc; padding: 3px; }
+#side-panel div { border-top: none !important; }
+#tasks { padding: 0 !important; margin-bottom: 10px; }
+#buildQueue, #executors { margin-bottom: 10px; border-style: hidden !important; }
+#buildQueue td, #executors td { border: none !important; }
+td.pane-header {
+  border: 1px solid #ccc !important;
+  border-radius: 5px;
+  border-bottom: none !important
+}
+#executors tbody:nth-child(3) tr:first-child { display: none; }
+#header { margin-bottom: 5px ; }
+#left-top-nav {
+  padding-left: 0 !important;
+  font-size: 26px !important;
+  font-family: Georgia, serif !important;
+  letter-spacing: -0.5px;
+  border-left: none !important;
+  text-indent: 3px;
+}
+#viewList td.noRight:nth-child(2) { border-top-left-radius: 5px; }
+#viewList td.active, .bigtable th, td.pane-header {
+  background-color: #edf1f4 !important;
+}
+#main-panel {
+  padding-right: 0px !important;
+}
+#side-panel {
+  padding-left: 0px !important;
+}
+}
