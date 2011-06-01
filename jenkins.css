@@ -1,6 +1,3 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-
-@-moz-document url-prefix("https://pav.hanyang.ac.kr/jenkins/") {
 
 * {
   color: #444;
@@ -18,12 +15,24 @@ a { text-decoration: none !important; color: #444 !important; }
 #search-box { border-radius: 5px; border: 1px solid #ccc; padding: 3px; }
 #side-panel div { border-top: none !important; }
 #tasks { padding: 0 !important; margin-bottom: 10px; }
-#buildQueue, #executors { margin-bottom: 10px; border-style: hidden !important; }
-#buildQueue td, #executors td { border: none !important; }
-td.pane-header {
+#side-panel table.pane {
+  margin-bottom: 10px;
+  border-style: hidden !important;
+}
+#side-panel table.pane td {
+  border: none !important;
+}
+#side-panel table.pane tr {
+  border-bottom: 1px dotted #ccc !important;
+}
+#side-panel table.pane td.pane-header {
   border: 1px solid #ccc !important;
   border-radius: 5px;
-  border-bottom: none !important
+  border-bottom: none !important;
+}
+#side-panel table.pane tbody tr:last-child,
+#side-panel table.pane tbody tr:first-child {
+  border-bottom: none !important;
 }
 #executors tbody:nth-child(3) tr:first-child { display: none; }
 #header { margin-bottom: 5px ; }
@@ -33,16 +42,38 @@ td.pane-header {
   font-family: Georgia, serif !important;
   letter-spacing: -0.5px;
   border-left: none !important;
-  text-indent: 3px;
+  text-indent: 32px;
+  background: url(http://mirrors.jenkins-ci.org/art/jenkins-logo/24x24/headshot.png) 3px 50% no-repeat;
 }
-#viewList td.noRight:nth-child(2) { border-top-left-radius: 5px; }
+#viewList td.noRight:nth-child(2) {
+  border-top-left-radius: 5px;
+}
+#viewList td.noLeft:nth-last-child(2) {
+  border-top-right-radius: 5px;
+}
 #viewList td.active, .bigtable th, td.pane-header {
   background-color: #edf1f4 !important;
 }
 #main-panel {
+  padding-top: 0px !important;
   padding-right: 0px !important;
+}
+.bigtable tr {
+  border-color: #ccc !important;
 }
 #side-panel {
   padding-left: 0px !important;
 }
+#main-table {
+  background-image: none !important;
+}
+table.progress-bar tr {
+  border: 1px solid #8bb3de !important;
+}
+td.progress-bar-done {
+  background: -moz-linear-gradient(top,  #2e66a1,  #77a6d8) !important;
+}
+#main-panel h1 {
+  margin-top: 5px !important;
+  font-size: 18px;
 }
