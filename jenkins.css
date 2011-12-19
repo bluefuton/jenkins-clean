@@ -12,7 +12,7 @@ a { text-decoration: none !important; color: #444 !important; }
 #top-panel { background: none !important; border-bottom: #bbb 1px solid; }
 #top-panel img { height: 0; }
 #top-panel img:after { content: "Jenkins"; }
-#search-box { border-radius: 5px; border: 1px solid #ccc; padding: 3px; }
+#search-box { border-radius: 5px; border: 1px solid #ccc; padding: 3px 3px 3px 20px; }
 #side-panel div { border-top: none !important; }
 #tasks { padding: 0 !important; margin-bottom: 10px; }
 #side-panel table.pane {
